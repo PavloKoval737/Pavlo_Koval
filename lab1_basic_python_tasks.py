@@ -11,7 +11,7 @@ def filter_list(l):
             new_list.append(x)
     return new_list
 
-
+print("Result task 1")
 print(filter_list(l1))
 print(filter_list(l2))
 print(filter_list(l3))
@@ -27,7 +27,7 @@ def first_non_repeating_letter(string):
             return i
     return ''
 
-
+print("Result task 2")
 print(first_non_repeating_letter('sTreSS'))
 print(first_non_repeating_letter('stress'))
 print(first_non_repeating_letter('adress'))
@@ -51,7 +51,7 @@ def digital_root(n):
         print("|", x)
     return r
 
-
+print("Result task 3")
 print("result = ", digital_root(16))
 print('')
 print("result = ", digital_root(942))
@@ -74,6 +74,7 @@ def getPairsCount(arr, n, target):
 arr = [1, 3, 6, 2, 2, 0, 4, 5]
 n = len(arr)
 target = 5
+print("Result task 4")
 print("Count of pairs is",
       getPairsCount(arr, n, target))
 
@@ -93,7 +94,7 @@ def sort_list_of_friends(str):
         str = str.strip(',')
     return str
 
-
+print("Result task 5")
 print('Fired:Corwill;Wilfred:Corwill;Barney:TornBull;Betty:Tornbull;Bjon:Tornbull;Raphael:Corwill;Alfred:Corwill')
 print('')
 print("result = ", sort_list_of_friends(
@@ -114,7 +115,7 @@ def nextBigger(n):
             return m
     return -1
 
-
+print("Result task 6")
 print("result = ", nextBigger(12))
 print('')
 print("result = ", nextBigger(513))
@@ -133,7 +134,7 @@ def int32_to_ip(int32):
     bin_string = f'{int32:b}'.rjust(32, '0')
     return '.'.join([str(int(bin_string[i:i + 8], 2)) for i in range(0, len(bin_string), 8)])
 
-
+print("Result task 7")
 print("2149583361 => ", int32_to_ip(2149583361))
 print('')
 print("32 => ", int32_to_ip(32))
