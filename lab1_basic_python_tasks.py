@@ -12,10 +12,9 @@ def filter_list(l):
     return new_list
 
 print("Result task 1")
-print(filter_list(l1))
-print(filter_list(l2))
-print(filter_list(l3))
-
+print(l1, "=>", filter_list(l1))
+print(l2, "=>", filter_list(l2))
+print(l3, "=>", filter_list(l3))
 
 # Task 2
 def first_non_repeating_letter(string):
@@ -28,14 +27,14 @@ def first_non_repeating_letter(string):
     return ''
 
 print("Result task 2")
-print(first_non_repeating_letter('sTreSS'))
-print(first_non_repeating_letter('stress'))
-print(first_non_repeating_letter('adress'))
-print(first_non_repeating_letter('aaaaaa'))
-print(first_non_repeating_letter('bob'))
-print(first_non_repeating_letter(''))
-print(first_non_repeating_letter('!?~:.,'))
-print(first_non_repeating_letter('hello world'))
+print("sTreSS =>", first_non_repeating_letter('sTreSS'))
+print("stress =>", first_non_repeating_letter('stress'))
+print("adress =>", first_non_repeating_letter('adress'))
+print("aaaaaa =>", first_non_repeating_letter('aaaaaa'))
+print("bob =>", first_non_repeating_letter('bob'))
+print(" =>", first_non_repeating_letter(''))
+print("!?~:., =>", first_non_repeating_letter('!?~:.,'))
+print("hello world =>", first_non_repeating_letter('hello world'))
 
 
 # Task 3
@@ -107,7 +106,6 @@ def nextBigger(n):
     arr = list(str(n))
     max_n = int("".join(sorted(arr, reverse=True)))
     min_n = sorted(arr)
-
     m = n
 
     while m <= max_n:
@@ -117,17 +115,17 @@ def nextBigger(n):
     return -1
 
 print("Result task 6")
-print("result = ", nextBigger(12))
+print("result for 12 = ", nextBigger(12))
 print('')
-print("result = ", nextBigger(513))
+print("result for 513 = ", nextBigger(513))
 print('')
-print("result = ", nextBigger(2017))
+print("result for 2017 = ", nextBigger(2017))
 print('')
-print("result = ", nextBigger(9))
+print("result for 9 = ", nextBigger(9))
 print('')
-print("result = ", nextBigger(111))
+print("result for 111 = ", nextBigger(111))
 print('')
-print("result = ", nextBigger(531))
+print("result for 531 = ", nextBigger(531))
 
 
 # Task 7
