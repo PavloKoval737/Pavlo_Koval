@@ -75,6 +75,7 @@ arr = [1, 3, 6, 2, 2, 0, 4, 5]
 n = len(arr)
 target = 5
 print("Result task 4")
+print(arr)
 print("Count of pairs is",
       getPairsCount(arr, n, target))
 
