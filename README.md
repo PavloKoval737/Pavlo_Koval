@@ -1,1 +1,1 @@
-# Програма розроблена у середовищі PyCharm Community з використанням Python 3.7
+# Програма розроблена у середовищі PyCharm Community Edition 2021.3 з використанням Python 3.7
