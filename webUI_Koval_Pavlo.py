@@ -1,7 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
-import pytest
 from behave import *
 
 class functions_selenium:
@@ -14,7 +13,6 @@ class functions_selenium:
 
     def enter_info(self, xpath, text):
         self.driver.find_element(By.XPATH, xpath).send_keys(text)
-
 
     def enter(self):
         #Log in
@@ -36,7 +34,7 @@ class functions_selenium:
         self.click_button('/html/body/div[1]/div[3]/div[1]/div[2]/form/fieldset/ol/table/tbody/tr[2]/td[2]/a[1]')
         self.click_button('/html/body/div[1]/div[3]/div[1]/div[2]/form/fieldset/p/input[1]')
 
-    def check(self, changes):
+    def check_add(self, changes):
         page = self.driver.find_element(By.XPATH, changes)
         assert page != None
 
@@ -46,7 +44,7 @@ def main():
     test.add_new_record()
 
     check_record = "//*[contains(text(), 'RandomName')]"
-    test.check(check_record)
+    test.check_add(check_record)
 
 if __name__=='__main__':
     main()
